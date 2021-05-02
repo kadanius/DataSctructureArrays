@@ -1,0 +1,53 @@
+---
+title: "Arrays in R"
+author: "Daniel Usanzimfura"
+date: "5/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## WHAT IS AN ARRAY
+
+An array is a data structure that can hold multi-dimensional data. In R, the array is objects that can hold two or more than two-dimensional data.
+
+Arrays can store the values having only a similar kind of data types. The data can be more than one dimensional, where there are rows and columns and dimensions of some length.
+
+Below is an example of how we create an array:
+
+
+## Vector
+
+We first create vectors as below
+
+v1<-c(1:12) 
+v2<-c(21:32) 
+```
+v2
+```
+
+
+## CREATING MATRICES
+
+Below, we are creating matrix1(M1) and matrix2(M2) and assign them with vectors we created above
+
+```
+{r}
+M1<-matrix(v1,nrow = 3, ncol= 4,byrow = TRUE)
+M2<-matrix(v2,nrow=3, ncol=4, byrow=TRUE)
+
+```
+## CREATING AN ARRAY
+
+First we create names and info for labels of both rows and columns
+We also create an array called M3
+
+```
+{r}
+names<-c("Danny","Kanye","Victor","Daud")
+info<-c("height","Shoesize","Marks")
+M3<-array(c(M1,M2),dim = c(3,4), dimnames =list(names,info))
+print(M3)
+```
