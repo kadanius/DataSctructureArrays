@@ -31,9 +31,9 @@ v2
 
 ## CREATING MATRICES
 
-Below, we are creating matrix1(M1) and matrix2(M2) and assign them with vectors we created above
+Below, we are creating matrix1(M
+```1) and matrix2(M2) and assign them with vectors we created above
 
-```
 {r}
 M1<-matrix(v1,nrow = 3, ncol= 4,byrow = TRUE)
 M2<-matrix(v2,nrow=3, ncol=4, byrow=TRUE)
